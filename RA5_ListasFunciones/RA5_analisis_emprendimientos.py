@@ -42,7 +42,7 @@ def imprimir_reporte(datos_reporte):
         print(f"Promedio diario: {fila["total"]/5:,.2f}")
         print(fila["clasificacion"])
         #cOMPLETAR LO QUE FALTA 
-        print("-"*60)
+        print("-"*60) 
         
 
 reporte = []
