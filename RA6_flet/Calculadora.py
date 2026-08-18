@@ -27,10 +27,12 @@ class ExtraActionButton(CalcButton):
 
 @ft.control
 class CalculatorApp(ft.Container):
+    bgcolor: str = ft.Colors.BLACK
+
     def init(self):
         self.reset()
         self.width = 350
-        self.bgcolor = ft.Colors.PURPLE
+        #self.bgcolor = ft.Colors.PURPLE
         self.border_radius = ft.BorderRadius.all(20)
         self.padding = 20
         self.result = ft.Text(value="0", color=ft.Colors.WHITE, size=20)
@@ -162,10 +164,11 @@ class CalculatorApp(ft.Container):
 def main(page: ft.Page):
     page.title = "Calc App"
     # create application instance
-    calc = CalculatorApp()
+    calc = CalculatorApp(bgcolor=ft.Colors.PINK)
+    calc2 = CalculatorApp(bgcolor=ft.Colors.PURPLE)
 
     # add application's root control to the page
-    page.add(calc)
+    page.add(calc,calc2)
 
 
 if __name__ == "__main__":
