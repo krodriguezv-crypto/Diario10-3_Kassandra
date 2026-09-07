@@ -165,10 +165,11 @@ def main(page: ft.Page):
     page.title = "Calc App"
     # create application instance
     calc = CalculatorApp(bgcolor=ft.Colors.PINK)
-    calc2 = CalculatorApp(bgcolor=ft.Colors.PURPLE)
+    calc2 = CalculatorApp(bgcolor=ft.Colors.GREEN_100)
+    calc3 = CalculatorApp(bgcolor=ft.Colors.PURPLE_500)
 
     # add application's root control to the page
-    page.add(calc,calc2)
+    page.add(calc,calc2,calc3)
 
 
 if __name__ == "__main__":
